@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YOUR NAME | Creative Portfolio</title>
+<meta name="description" content="Creative portfolio of YOUR NAME: graphic design, calligraphy, photography and video editing.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,500&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0a0c; --card:#141418; --text:#ecebe6; --muted:#8d8d96;
+    --accent:#ff6a2b; --accent2:#ffb347;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;font-weight:300;line-height:1.6;overflow-x:hidden}
+
+  body::before{content:"";position:fixed;inset:0;z-index:-1;
+    background:radial-gradient(600px circle at 15% 10%,rgba(255,106,43,.14),transparent 60%),
+               radial-gradient(500px circle at 90% 60%,rgba(255,179,71,.08),transparent 60%)}
+
+  nav{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;
+    padding:18px 6vw;background:rgba(10,10,12,.7);backdrop-filter:blur(12px);z-index:50}
+  nav .logo{font-family:'Playfair Display',serif;font-weight:700;font-size:1.2rem}
+  nav .links a{color:var(--muted);text-decoration:none;margin-left:20px;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;transition:.3s}
+  nav .links a:hover{color:var(--accent)}
+
+  section{padding:110px 6vw 60px;max-width:1300px;margin:auto}
+
+  #intro{min-height:100vh;display:flex;flex-direction:column;justify-content:center}
